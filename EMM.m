@@ -17,6 +17,7 @@ resp=zeros(M,K);
 %% 进入迭代
 for t=1:times
     %% E步骤，求取响应度
+
     for k=1:K
         resp(:,k)=alpha(k,1).*getPDF(Y,mu(k,:),sigma);
     end
